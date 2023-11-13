@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+    font-size: 10em;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+.car-wrap {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+}
+.car {
+    overflow: hidden;
+    width: 75%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.car__btn--prev, .car__btn--next {
+    font-size: 1rem;
+    font-weight: lighter;
+    background: none;
+    border: none;
+    z-index: 100;
+    cursor: pointer;
+}
+.car__photo {
+    border-radius: 0.1rem;
+    box-shadow: 0.009rem 0.009rem 0.009rem 0.009rem #aaa;
+    transition: transform 0.5s, opacity, 0.5s, z-index, 0.5s ease-in-out;
+}
+.active {
+    opacity: 1;
+    width: 2.7rem;
+    height: 2.7rem;
+    position: absolute;
+}
+.next {
+    opacity: 0.5;
+    height: 2rem;
+    width: 2rem;
+    transform: translate(180%);
+}
+.prev {
+    opacity: 0.5;
+    height: 2rem;
+    width: 2rem;
+    transform: translate(-180%);
+}
+.next01 {
+    opacity: 0.5;
+    height: 2rem;
+    width: 2rem;
+    transform: translate(80%);
+}
+.prev01 {
+    opacity: 0.5;
+    height: 2rem;
+    width: 2rem;
+    transform: translate(-80%);
+}
