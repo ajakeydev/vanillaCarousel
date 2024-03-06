@@ -1,3 +1,6 @@
 # vanillaCarousel
 Working Project List
-## Recently made private, the thing just works.
+## Recently made public.
+-The thing works
+-The thing works
+
